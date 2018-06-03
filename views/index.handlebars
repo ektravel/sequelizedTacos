@@ -1,0 +1,38 @@
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-md-9">
+            <h1>Feed Me Tacos!</h1>
+            <form class="create-form">
+                <div class="form-group">
+                    <label for="textarea">Enter the taco you want to eat.</label>
+                    <textarea class="form-control" id="textarea" rows="3"></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-outline-warning" >Taco Time</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Tacos I am about to devour.</h2>
+            <ul>
+                {{#each tacos}}
+                    {{#unless devoured}}
+                    <li>
+                        <button data-id="{{id}}" type="button" class="btn btn-outline-danger btn-sm eatMe"> Eat Me </button>{{taco_name}}
+                    </li>
+                    {{/unless}} 
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h2>Tacos I have already devoured.</h2>
+            <ul>
+                {{#each tacos}} {{#if devoured}}
+                <li> {{taco_name}} </li>
+                {{/if}} {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

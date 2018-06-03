@@ -1,0 +1,8 @@
+body {
+    background-image: url("../img/photo2.jpg");
+    color: aliceblue;
+    font-size: large;
+};
+.container {
+    margin-top: 10%;
+};
