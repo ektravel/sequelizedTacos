@@ -8,10 +8,10 @@ body {
 .container {
     margin-top: 10%;
 };
-.tacoButton {
-    margin-left: 15px;
-}
 
+.btn-outline-danger{
+    margin-left: 10px;
+}
 .tacoLabel{
     margin-right: 15px;
 }

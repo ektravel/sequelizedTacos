@@ -20,7 +20,8 @@
                 {{#each tacos}}
                     {{#unless devoured}}
                     <li>
-                        <span class="tacoLabel">{{taco_name}}</span><button data-id="{{id}}" type="button" class="btn btn-outline-danger btn-sm" id="eatMe"> Eat Me </button>
+                        <span class="tacoLabel">{{taco_name}}</span>
+                        <button data-id="{{id}}" type="button" class="btn btn-outline-danger btn-sm eatMe"> Eat Me </button>
                     </li>
                     {{/unless}} 
                 {{/each}}
@@ -31,7 +32,9 @@
             <ul>
                 {{#each tacos}} {{#if devoured}}
                 <li> 
-                    <span class="tacoLabel">{{taco_name}}</span> <button data-id="{{id}}" type="button" class="btn btn-outline-danger btn-sm" id = "deleteMe"> Delete Me </button></li>
+                    <span class="tacoLabel">{{taco_name}}</span> 
+                    <button data-id="{{id}}" type="button" class="btn btn-outline-danger btn-sm deleteMe"> Delete Me </button>
+                    </li>
                 {{/if}} {{/each}}
             </ul>
         </div>

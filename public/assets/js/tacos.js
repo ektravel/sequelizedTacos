@@ -18,6 +18,20 @@ $(function(){
             }
           );
     });
+    $(".deleteMe").on("click", function(event){
+        var id = $(this).data("id");
+
+        $.ajax("/api/tacos/" + id, {
+            type: "DELETE",
+            data: id
+          }).then(
+            function() {
+                console.log("I ate taco # " + id)
+              // Reload the page to get the updated list
+              location.reload();
+            }
+          );
+    })
 
     $(".create-form").on("submit", function(event) {
         // Make sure to preventDefault on a submit event.
