@@ -1,8 +1,17 @@
 body {
-    background-image: url("../img/photo2.jpg");
+    background-image: url("../img/photo1.jpg");
+    background-repeat: no-repeat;
+    background-position: inherit;
     color: aliceblue;
     font-size: large;
 };
 .container {
     margin-top: 10%;
 };
+.tacoButton {
+    margin-left: 15px;
+}
+
+.tacoLabel{
+    margin-right: 15px;
+}
